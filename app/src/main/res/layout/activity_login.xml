@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/giftbees"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:fontFamily="@font/mochiy"
+            android:layout_marginTop="50dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/atTheRate"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/atrate"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/atTheRate"
+                android:textColorHint="#A09898"
+                android:hint="Email Address"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/atTheRat"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/atTheRat"
+                android:textColorHint="#A09898"
+                android:hint="Password"
+                />
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#0694D6"
+            android:textSize="16dp"
+            android:text="Forgot Password?"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
+            android:elevation="35dp"
+            android:textAllCaps="false"
+            android:text="Sign In"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <View
+            android:id="@+id/line_left"
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="OR"
+                android:layout_toRightOf="@id/line_left"
+                />
+            <View
+                android:id="@+id/line_lef"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+
+                android:layout_toRightOf="@+id/or"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundlogin"
+            android:text="Login With Google"
+            android:elevation="35dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
