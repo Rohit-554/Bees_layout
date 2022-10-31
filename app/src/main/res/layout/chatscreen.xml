@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_margin="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:elevation="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:fontFamily="@font/mochiy"
+            android:text="Shagil Islam"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="App Dev | Cool Man"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <View
+                android:id="@+id/line_left"
+                android:layout_width="180dp"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:id="@+id/chat_date"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Aug 5"
+                android:layout_toRightOf="@id/line_left"
+                />
+            <View
+                android:id="@+id/line_lef"
+                android:layout_width="160dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="1dp"
+
+                android:layout_toRightOf="@+id/chat_date"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/usr_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chat_profile_img"
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/giftbees"
+                android:elevation="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/usr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:text="John"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_toEndOf="@+id/usr_name"
+                    android:layout_marginTop="10dp"
+                    android:text="11:08" />
+
+                <TextView
+                    android:id="@+id/chat_user1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usr_name"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Hey ! I am John" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/doubletick" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/chat_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/chatbox"
+            android:fontFamily="@font/lato"
+            android:paddingStart="40dp"
+            android:paddingEnd="10dp"
+            android:imeOptions="actionSend"
+            android:textCursorDrawable="@drawable/cursor_colour_chatpage"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
