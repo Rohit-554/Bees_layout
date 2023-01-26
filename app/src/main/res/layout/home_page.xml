@@ -18,6 +18,7 @@
         android:elevation="5dp">
 
         <!-- this is a text -->
+        <!-- this is a secon text -->
 
         <LinearLayout
             android:layout_width="match_parent"
